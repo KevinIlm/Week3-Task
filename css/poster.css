@@ -19,6 +19,59 @@ html {
     text-align: center;
 }
 
+.modal{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(77, 66, 66, 0.418);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content{
+    background-color: rgb(98, 114, 113);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 800px;
+    height: 900px;
+    animation: zoom-in 0.7s;
+}
+
+.modal-content h1 {
+    padding-bottom: 1.5rem;
+    color: #fff;
+}
+
+.modal-content img{
+    border-radius: 1.5rem;
+}
+
+@keyframes zoom-in{
+    0% {transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+.closebtn{
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+    color: rgb(134, 0, 0);
+}
+
+.movie-poster-modal{
+    width: 400px;
+}
+
+.movie-poster-container{
+    display: inline-block;
+    width: 300px;
+    cursor: pointer;
+}
+
+
 .movie-title {
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -104,7 +157,7 @@ html {
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 4rem;
     text-align: center;
     color: #777;
 }
