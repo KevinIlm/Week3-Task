@@ -15,7 +15,7 @@ html {
 
 .movie-card {
     margin-top: 5rem;
-    height: 800px;
+    height: 1100px;
     text-align: center;
 }
 
@@ -126,6 +126,59 @@ html {
     letter-spacing: 0.1rem;
 }
 
+.carousel-container{
+    width: 75%;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.carousel{
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden{
+    display: none;
+}
+
+.carousel .carousel__item--visible{
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.carousel .carousel__actions{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button{
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: rgba(110, 100, 87, 0.26);
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem;
+}
+
 .movie-info-actions {
     font-size:1.1rem;
 }
@@ -137,7 +190,7 @@ html {
 .movie-info-actions ul li {
     display: inline-block;
     margin-right: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     height: 50px;
     width: 50px;
